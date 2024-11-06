@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  height: var(--heightMenu);
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  align-content: center;
+  width: fit-content;
+  font-size: 4em;
+  font-weight: bold;
+  /* border: 1px solid white; */
+  white-space: nowrap;
+  color: blue;
+  cursor: pointer;
+  text-shadow: 1px 1px red;
+}
+
+.botoes {
+  display: flex;
+  column-gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 50px;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.header a{
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.header a{
+  justify-self: flex-start;
+}
+
+.header .sair{
+  text-align: right;
+  width: 100%;
+}
+
+.header a:hover{
+  color: red;
+}

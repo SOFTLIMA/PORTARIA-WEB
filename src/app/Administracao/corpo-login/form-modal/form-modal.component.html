@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{ newItem.id ? 'Editar Item' : 'Adicionar Item' }}</h2>
+<mat-dialog-content>
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Título</mat-label>
+      <input matInput [(ngModel)]="newItem.titulo" name="titulo" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Data</mat-label>
+      <input matInput [(ngModel)]="newItem.data" name="data" required>
+    </mat-form-field>
+    <mat-form-field class="input-desc">
+      <mat-label>Descrição</mat-label>
+      <textarea class="caixa-texto" matInput [(ngModel)]="newItem.descricao" name="descricao" required></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Links de Imagens</mat-label>
+      <input matInput [(ngModel)]="newItem.link_Imgs" name="link_Imgs" required>
+    </mat-form-field>
+    <button mat-button type="submit">{{ newItem.id ? 'Atualizar Item' : 'Adicionar Item' }}</button>
+    <button mat-button type="button" (click)="onCancel()">Cancelar</button>
+  </form>
+</mat-dialog-content>

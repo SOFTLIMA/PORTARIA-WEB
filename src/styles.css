@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@aws-amplify/ui/dist/styles.css';
+
+*{
+  font: 400 1rem Roboto, sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+:root {
+
+  --heightMenu: 130px;
+  --heightRodape: 150px;
+}
+
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(135deg, #313131, black);
+}

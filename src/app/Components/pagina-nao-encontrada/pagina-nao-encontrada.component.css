@@ -1,0 +1,15 @@
+.corpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - var(--heightMenu) - var(--heightRodape));
+}
+
+p {
+  align-self: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}

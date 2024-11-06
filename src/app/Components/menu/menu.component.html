@@ -1,0 +1,9 @@
+<div *ngIf="sair!" class="header">
+  <span class="logo" routerLink="/home">Portaria SR</span>
+  <div class="botoes">
+    <a routerLink="/funcionarios">Funcionarios</a>
+    <a routerLink="/veiculos">Veiculos</a>
+    <a routerLink="/visitantes">Visitantes</a>
+    <div *ngIf="sair" class="sair"><a (click)="signOut()" >Sair</a></div>
+  </div>
+</div>

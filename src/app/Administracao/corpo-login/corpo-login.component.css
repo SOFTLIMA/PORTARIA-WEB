@@ -1,0 +1,82 @@
+/* Container da Tabela */
+.table-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Botão de Adicionar */
+button[mat-icon-button] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0; /* Ajuste o padding se necessário */
+  margin-top: 0; /* Espaçamento abaixo do botão */
+  transition: background-color 0.3s;
+  width: 40px; /* Define largura fixa */
+  height: 40px; /* Define altura fixa */
+}
+
+button[mat-icon-button]:hover {
+  background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para o Cabeçalho */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold; /* Estilo em negrito para o cabeçalho */
+}
+
+/* Largura da Coluna de Ações */
+.mat-column-actions {
+  width: 200px; /* Ajuste conforme necessário */
+  text-align: center; /* Centraliza o conteúdo */
+
+}
+
+.botoes{
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  column-gap: 10%;
+}
+
+.mat-icon {
+  align-items: center;
+  justify-items: center;
+
+}
+
+/* Estilos para as Células */
+td {
+  color: #333; /* Cor do texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.mat-dialog-container {
+  max-width: none;
+  max-height: none;
+}
