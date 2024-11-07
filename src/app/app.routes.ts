@@ -7,6 +7,7 @@ import { authGuard } from './Administracao/shared/auth.guard';
 import { FuncionariosComponent } from './Components/funcionarios/funcionarios.component';
 import { VeiculosComponent } from './Components/veiculos/veiculos.component';
 import { VisitantesComponent } from './Components/visitantes/visitantes.component';
+import { VazioComponent } from './Components/vazio/vazio.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent, title: 'Login'},
@@ -18,13 +19,18 @@ export const routes: Routes = [
     title: 'Funcionarios',
     canActivate: [authGuard],
     children: [
+      // {path: '', redirectTo: 'form', pathMatch: 'full'},
+      {
+        path: '', // Rota filha
+        canActivate: [authGuard],
+        component: VazioComponent
+      },
       {
         path: 'form', // Rota filha
         canActivate: [authGuard],
         component: DynamicFormComponent
       },
-
-      {path: '**', component: PaginaNaoEncontradaComponent, title: '404', canActivate: [authGuard]},
+      {path: '**', component: VazioComponent,  canActivate: [authGuard]},
     ]
     },
 
