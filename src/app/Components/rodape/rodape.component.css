@@ -1,7 +1,7 @@
 .corpo {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   height: var(--heightRodape);
   border-top: 1px solid white;
 }

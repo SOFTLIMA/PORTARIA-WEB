@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../services/AuthService';
 import { LoginService } from '../../../services/Login.Service';
-import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-rodape',

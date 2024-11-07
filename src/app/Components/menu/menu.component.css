@@ -1,3 +1,7 @@
+* {
+  /* border: 1px solid white; */
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -28,10 +32,11 @@
   align-items: center;
   margin-left: 50px;
   width: 100%;
-  /* border: 1px solid white; */
+  height: 100%;
 }
 
 .header a{
+  align-content: center;
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
@@ -39,6 +44,7 @@
   border-radius: 5px;
   padding: 3px;
   cursor: pointer;
+  height: 100%;
 }
 
 .header a{
@@ -46,10 +52,73 @@
 }
 
 .header .sair{
-  text-align: right;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
   width: 100%;
+  height: 100%;
 }
 
 .header a:hover{
   color: red;
+}
+
+@media only screen and  (max-width: 768px){
+  .header {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .logo {
+    font-size: 8vw;
+  }
+
+  .botoes {
+    display: flex;
+    column-gap: 2vw;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    max-width: 100vw;
+    /* border: 1px solid black; */
+  }
+  .header a{
+    font-size: 5vw;
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid white; */
+  }
+
+  .header .sair{
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+  }
+}
+
+@media only screen and  (max-width: 250px){
+  .header a{
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and  (min-width: 768px) and (max-width: 1280px){
+  .header {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .botoes {
+    max-width: 90vw;
+    column-gap: 1vw;
+  }
+
+  .header .sair{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -21,8 +21,7 @@ export class AuthService {
     return cognitoToken?.idToken?.payload['name']?.toString();
   }
 
-  signOut() {
-    signOut();
+  async signOut() {
+    await signOut();
   }
-
 }
